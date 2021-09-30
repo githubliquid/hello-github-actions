@@ -1,0 +1,17 @@
+name: "Hello Actions"
+description: "Great someone"
+author: "test"
+
+input:
+  MY_NAME: 
+    description: "Who to greet"
+    require: true
+    default: "hello"
+    
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  
+branding:
+  icon: "mic"
+  color: "purple"
